@@ -15,6 +15,9 @@ public:
     explicit StartUp(QWidget *parent = nullptr);
     ~StartUp();
 
+private slots:
+    void on_ButtonMonitoring_clicked();
+
 private:
     Ui::StartUp *ui;
 };

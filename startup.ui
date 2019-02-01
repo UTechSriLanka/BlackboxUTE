@@ -1,21 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <author/>
- <comment/>
- <exportmacro/>
  <class>StartUp</class>
- <widget name="StartUp" class="QWidget">
+ <widget class="QWidget" name="StartUp">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>551</width>
+    <height>493</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>New Session</string>
   </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="0">
+    <widget class="QToolBox" name="Options">
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <widget class="QWidget" name="PageNewMachine">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>529</width>
+        <height>302</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Setup New Machine</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This option will take you through a setup wizard which will setup a NEW machine. &lt;br/&gt;This includes;&lt;/p&gt;&lt;p&gt;• Communications&lt;br/&gt;• Inputs &amp;amp; Outputs (parameters)&lt;br/&gt;• Alerts (SMS &amp;amp; Email)&lt;/p&gt;&lt;p&gt;Click the button below to continue, otherwise select a different option.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="ButtonNewMachine">
+         <property name="text">
+          <string>Setup a New Machine</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="PageExsistingMachine">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>529</width>
+        <height>302</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Setup Exsisting Machine</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This option will take you through the steps to edit the device configuration on an &lt;br/&gt;EXSISTING machine. This includes;&lt;/p&gt;&lt;p&gt;• Communications&lt;br/&gt;• Inputs &amp;amp; Outputs (parameters)&lt;br/&gt;• Alerts (SMS &amp;amp; Email)&lt;/p&gt;&lt;p&gt;Click the button below to continue, otherwise select a different option.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ButtonExsisting">
+         <property name="text">
+          <string>Setup a Exsisting Machine</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="MonitorinPage">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>529</width>
+        <height>302</height>
+       </rect>
+      </property>
+      <attribute name="label">
+       <string>Machine Monitoring</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;This option allows you to connect to a machine which has already been setup and to &lt;br/&gt;monitor the data being collected and sent. Currently the machine can be connected &lt;br/&gt;through MODBus or CANBus. &lt;/p&gt;&lt;p&gt;To view data which are posted to the server, please use the Utech Remote Monitoring &lt;br/&gt;Portal, available &lt;a href=&quot; http://utech.com.lk/utemms/public/login&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;here.&lt;/span&gt;&lt;/a&gt; This option is available for the convienece of installations and &lt;br/&gt;site maintance.&lt;/p&gt;&lt;p&gt;Click the button belwo to continue, otherwise select a different option.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ButtonMonitoring">
+         <property name="text">
+          <string>Machine Monitoring</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="Label">
+        <property name="font">
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>What do you need to do? Click an option to read more.</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
  </widget>
- <pixmapfunction/>
+ <resources/>
  <connections/>
 </ui>

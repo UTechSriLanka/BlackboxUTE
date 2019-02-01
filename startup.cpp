@@ -12,3 +12,8 @@ StartUp::~StartUp()
 {
     delete ui;
 }
+
+void StartUp::on_ButtonMonitoring_clicked()
+{
+
+}
